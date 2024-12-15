@@ -57,6 +57,9 @@ python EfficientSearchandRetrievalUsingInvertedIndexing.py \
     --num_clusters 20 \
     --model_name all-MiniLM-L6-v2
 
+## Testing Queries
+After completing the embedding generation, clustering, and inverted indexing process, the system allows for seamless testing of queries. Users can provide their own queries in the specified format and evaluate the system's performance using precision and recall metrics. The Test.py script supports query testing by performing semantic search against the indexed documents and generating detailed evaluation metrics for specified k values. This feature ensures the system's flexibility and usability for real-world scenarios, enabling quick validation of the retrieval performance.
+
 ## Performance Evaluation
 **Precision and Recall:**
 - Both scripts calculate Precision@k and Recall@k to measure the accuracy and completeness of retrieval results.
@@ -70,6 +73,3 @@ This system offers two tailored solutions for semantic search:
 
 **ExhaustiveSearchandRetrieval.py** is ideal for smaller datasets with straightforward exhaustive comparisons.
 **EfficientSearchandRetrievalUsingInvertedIndexing.py** scales seamlessly to large datasets by leveraging clustering and inverted indexing. Both scripts provide flexibility, efficiency, and meaningful results using Sentence-BERT embeddings.
-
-**Testing Queries**
-After completing the embedding generation, clustering, and inverted indexing process, the system allows for seamless testing of queries. Users can provide their own queries in the specified format and evaluate the system's performance using precision and recall metrics. The Test.py script supports query testing by performing semantic search against the indexed documents and generating detailed evaluation metrics for specified k values. This feature ensures the system's flexibility and usability for real-world scenarios, enabling quick validation of the retrieval performance.
